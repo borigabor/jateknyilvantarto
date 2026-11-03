@@ -1,0 +1,31 @@
+# Korábbi backend verzió kihagyása
+spring-react-game-crud-main/
+
+# Frontend függőségek és generált fájlok
+**/node_modules/
+**/build/
+**/dist/
+
+# Java és Maven generált fájlok
+**/target/
+
+# Fejlesztőkörnyezetek fájljai
+.idea/
+.vscode/
+*.iml
+
+# Operációs rendszer fájljai
+.DS_Store
+Thumbs.db
+
+# Szakdolgozat Word dokumentumok kihagyása
+*.docx
+*.doc
+
+frontend-git-backup/
+
+# Helyi adatbázis-konfiguráció kihagyása
+spring-react-game-crud-v2-main/src/main/resources/application.properties
+
+# Visual Studio ideiglenes fájljai
+**/.vs/

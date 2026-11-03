@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .layout__item--90-percent {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .layout__item--80-percent {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .layout__item--70-percent {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .layout__item--50-percent {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .full-container {
+    padding-left: 300px;
+  }
+
+  .lg-container {
+    padding-left: 250px;
+  }
+
+  .max-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-y {
+    @apply sm:py-12 py-6;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-12 pb-6;
+  }
+
+  .padding-l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding-r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .transition-smooth {
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  }
+
+  .heading {
+    @apply text-2xl capitalize font-bold font-exo py-3;
+  }
+
+  .meta-info {
+    @apply text-xl font-exo text-dark-muted;
+  }
+
+  .input-field {
+    @apply rounded w-full outline-none p-2 bg-dark-surface border border-dark-hover text-white;
+  }
+
+  .label {
+    @apply block mb-1 text-sm font-exo text-dark-muted;
+  }
+}
